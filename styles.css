@@ -1,0 +1,31 @@
+.banner-extension {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 15%;
+}
+
+.extention-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #1DD100;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.offer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 15%;
+}
+
+.offer-item {
+    /* background-color: #FFBF0F; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
