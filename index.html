@@ -60,7 +60,8 @@
                             <p class="mb-5">Yes, you can run unit tests and view the results directly within the app.
                                 The
                                 integrated testing features allow for a streamlined .</p>
-                            <a href="#seat-selection-container" class="btn bg-[#1dd100] border-0 text-white">Buy Ticket</a>
+                            <a href="#seat-selection-container" class="btn bg-[#1dd100] border-0 text-white">Buy
+                                Ticket</a>
                         </div>
                     </div>
                 </div>
@@ -146,7 +147,7 @@
                         </div>
                         <div class="flex items-center bg-[#1DD1001A] px-5">
                             <img src="./images/seat-green.png" alt="">
-                            <p class="text-[#1DD100]">40 seats left</p>
+                            <p class="text-[#1DD100]"><span id="numberOfSeatsLeft">40</span> seats left</p>
                         </div>
                     </div>
 
@@ -196,82 +197,82 @@
 
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
-                            <button id="A1" class="seat">A1</button>
-                            <button id="A2" class="seat">A2</button>
+                            <button id="A1" class="seat" onclick="handleSeatSelection('A1')">A1</button>
+                            <button id="A2" class="seat" onclick="handleSeatSelection('A2')">A2</button>
                         </div>
                         <div class="flex gap-8">
-                            <button id="A3" class="seat">A3</button>
-                            <button id="A4" class="seat">A4</button>
-                        </div>
-                    </div>
-                    <div class="flex justify-between mt-5">
-                        <div class="flex gap-8">
-                            <button id="B1" class="seat">B1</button>
-                            <button id="B2" class="seat">B2</button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button id="B3" class="seat">B3</button>
-                            <button id="B4" class="seat">B4</button>
+                            <button id="A3" class="seat" onclick="handleSeatSelection('A3')">A3</button>
+                            <button id="A4" class="seat" onclick="handleSeatSelection('A4')">A4</button>
                         </div>
                     </div>
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
-                            <button id="C1" class="seat">C1</button>
-                            <button id="C2" class="seat">C2</button>
+                            <button id="B1" class="seat" onclick="handleSeatSelection('B1')">B1</button>
+                            <button id="B2" class="seat" onclick="handleSeatSelection('B2')">B2</button>
                         </div>
                         <div class="flex gap-8">
-                            <button id="C3" class="seat">C3</button>
-                            <button id="C4" class="seat">C4</button>
-                        </div>
-                    </div>
-                    <div class="flex justify-between mt-5">
-                        <div class="flex gap-8">
-                            <button id="D1" class="seat">D1</button>
-                            <button id="D2" class="seat">D2</button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button id="D3" class="seat">D3</button>
-                            <button id="D4" class="seat">D4</button>
+                            <button id="B3" class="seat" onclick="handleSeatSelection('B3')">B3</button>
+                            <button id="B4" class="seat" onclick="handleSeatSelection('B4')">B4</button>
                         </div>
                     </div>
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
-                            <button id="E1" class="seat">E1</button>
-                            <button id="E2" class="seat">E2</button>
+                            <button id="C1" class="seat" onclick="handleSeatSelection('C1')">C1</button>
+                            <button id="C2" class="seat" onclick="handleSeatSelection('C2')">C2</button>
                         </div>
                         <div class="flex gap-8">
-                            <button id="E3" class="seat">E3</button>
-                            <button id="E4" class="seat">E4</button>
-                        </div>
-                    </div>
-                    <div class="flex justify-between mt-5">
-                        <div class="flex gap-8">
-                            <button id="F1" class="seat">F1</button>
-                            <button id="F2" class="seat">F2</button>
-                        </div>
-                        <div class="flex gap-8">
-                            <button id="F3" class="seat">F3</button>
-                            <button id="F4" class="seat">F4</button>
+                            <button id="C3" class="seat" onclick="handleSeatSelection('C3')">C3</button>
+                            <button id="C4" class="seat" onclick="handleSeatSelection('C4')">C4</button>
                         </div>
                     </div>
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
-                            <button id="G1" class="seat">G1</button>
-                            <button id="G2" class="seat">G2</button>
+                            <button id="D1" class="seat" onclick="handleSeatSelection('D1')">D1</button>
+                            <button id="D2" class="seat" onclick="handleSeatSelection('D2')">D2</button>
                         </div>
                         <div class="flex gap-8">
-                            <button id="G3" class="seat">G3</button>
-                            <button id="G4" class="seat">G4</button>
+                            <button id="D3" class="seat" onclick="handleSeatSelection('D3')">D3</button>
+                            <button id="D4" class="seat" onclick="handleSeatSelection('D4')">D4</button>
                         </div>
                     </div>
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
-                            <button id="H1" class="seat">H1</button>
-                            <button id="H2" class="seat">H2</button>
+                            <button id="E1" class="seat" onclick="handleSeatSelection('E1')">E1</button>
+                            <button id="E2" class="seat" onclick="handleSeatSelection('E2')">E2</button>
                         </div>
                         <div class="flex gap-8">
-                            <button id="H3" class="seat">H3</button>
-                            <button id="H4" class="seat">H4</button>
+                            <button id="E3" class="seat" onclick="handleSeatSelection('E3')">E3</button>
+                            <button id="E4" class="seat" onclick="handleSeatSelection('E4')">E4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-5">
+                        <div class="flex gap-8">
+                            <button id="F1" class="seat" onclick="handleSeatSelection('F1')">F1</button>
+                            <button id="F2" class="seat" onclick="handleSeatSelection('F2')">F2</button>
+                        </div>
+                        <div class="flex gap-8">
+                            <button id="F3" class="seat" onclick="handleSeatSelection('F3')">F3</button>
+                            <button id="F4" class="seat" onclick="handleSeatSelection('F4')">F4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-5">
+                        <div class="flex gap-8">
+                            <button id="G1" class="seat" onclick="handleSeatSelection('G1')">G1</button>
+                            <button id="G2" class="seat" onclick="handleSeatSelection('G2')">G2</button>
+                        </div>
+                        <div class="flex gap-8">
+                            <button id="G3" class="seat" onclick="handleSeatSelection('G3')">G3</button>
+                            <button id="G4" class="seat" onclick="handleSeatSelection('G4')">G4</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-5">
+                        <div class="flex gap-8">
+                            <button id="H1" class="seat" onclick="handleSeatSelection('H1')">H1</button>
+                            <button id="H2" class="seat" onclick="handleSeatSelection('H2')">H2</button>
+                        </div>
+                        <div class="flex gap-8">
+                            <button id="H3" class="seat" onclick="handleSeatSelection('H3')">H3</button>
+                            <button id="H4" class="seat" onclick="handleSeatSelection('H4')">H4</button>
                         </div>
                     </div>
                 </div>
@@ -280,26 +281,26 @@
                     <h1 class="text-2xl mb-2">Select Your Seat</h1>
                     <div class="min-h-[300px] bg-gray-100 p-5">
                         <div class="grid grid-cols-3 border-b-2">
-                            <h1>Seat</h1>
+                            <h1>Seat <span id="numberOfSelectedSeat" class="bg-[#1DD100] text-white p-2"></span></h1>
                             <h1>Class</h1>
                             <h1>Price</h1>
                         </div>
 
-                        <div class="h-32">
+                        <div id="seat-summary" class="h-32 py-3">
 
                         </div>
 
                         <div class="flex justify-between py-5 border-t-2">
                             <h1>Total Price</h1>
-                            <h1>BDT <span>0</span></h1>
+                            <h1>BDT <span id="TotalPrice">0</span></h1>
                         </div>
-                        <div>
-                            <input type="text" class="w-[70%] p-2">
-                            <button class="bg-[#1DD100] p-2 text-white">Apply</button>
+                        <div id="coupon-container">
+                            <input id="coupon-input" disabled type="text" class="w-[70%] p-2 border-2" placeholder="Have any coupon?">
+                            <button id="apply-button" disabled class="bg-[#1DD100] p-2 text-white" onclick="getCoupon()">Apply</button>
                         </div>
                         <div class="flex justify-between mt-3">
                             <h1>Grand Total</h1>
-                            <h1>BDT <span>0</span></h1>
+                            <h1>BDT <span id="grandTotal">0</span></h1>
                         </div>
                     </div>
 
@@ -361,6 +362,7 @@
         </nav>
     </footer>
 
+    <script src="./functionality.js"></script>
 </body>
 
 </html>

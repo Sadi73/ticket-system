@@ -35,3 +35,13 @@
     height: 50px;
     width: 100px;
 }
+
+.selected-seat {
+    background-color: #1DD100;
+    color: white;
+}
+
+.dynamic-li {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
