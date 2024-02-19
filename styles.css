@@ -30,6 +30,10 @@
     padding: 0 20px;
 }
 
+.seat-summary-container{
+
+}
+
 .seat {
     background-color: #F7F8F8;
     height: 50px;
@@ -44,4 +48,30 @@
 .dynamic-li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width:800px) {
+    .banner-extension {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 0px
+    }
+
+    .offer-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 0
+    }
+
+    .seat-selection-container{
+        flex-direction: column;
+    }
+
+    .seat{
+        width: 50px;
+    }
+
+    .seat-summary-container{
+        width: 100%;
+    }
 }

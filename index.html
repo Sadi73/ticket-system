@@ -107,6 +107,7 @@
                             <p>Coupon Code</p>
                         </div>
                     </div>
+
                     <div class="offer-item bg-[#F78C9C]">
                         <div>
                             <h1 class="text-5xl font-bold">20% OFF</h1>
@@ -127,16 +128,16 @@
             </section>
         </div>
 
-        <div class="ticket-container bg-[#F7F8F8] p-32">
+        <div class="ticket-container bg-[#F7F8F8] lg:p-32">
             <h1 class="text-5xl font-bold text-center">P.H Poribohon</h1>
-            <div class="w-1/2 mx-auto my-5">
+            <div class="w-full lg:w-1/2 mx-auto my-5">
                 <p class=" text-center">Yes, you can run unit tests and view the results directly within the app. The
                     integrated
                     testing features allow for a streamlined .</p>
             </div>
 
             <div class="route-info flex items-center justify-around bg-white ">
-                <div class="w-3/4 pl-10">
+                <div class="lg:w-3/4 pl-10">
                     <div class="flex justify-between mb-8">
                         <div class="flex">
                             <img src="./images/bus-logo.png" alt="">
@@ -167,10 +168,12 @@
                         </div>
                     </div>
                 </div>
+
                 <img src="./images/info-devider.png" alt="">
+
                 <div class="flex flex-col items-center justify-center pr-8">
                     <img src="./images/fare.png" alt="">
-                    <h1 class="text-3xl font-bold text-center">550 Taka</h1>
+                    <h1 class="lg:text-3xl font-bold text-center">550 Taka</h1>
                     <h4 class="text-xl text-center">Per Seat</h4>
                 </div>
             </div>
@@ -205,6 +208,7 @@
                             <button id="A4" class="seat" onclick="handleSeatSelection('A4')">A4</button>
                         </div>
                     </div>
+
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
                             <button id="B1" class="seat" onclick="handleSeatSelection('B1')">B1</button>
@@ -215,6 +219,7 @@
                             <button id="B4" class="seat" onclick="handleSeatSelection('B4')">B4</button>
                         </div>
                     </div>
+
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
                             <button id="C1" class="seat" onclick="handleSeatSelection('C1')">C1</button>
@@ -225,6 +230,7 @@
                             <button id="C4" class="seat" onclick="handleSeatSelection('C4')">C4</button>
                         </div>
                     </div>
+                    
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
                             <button id="D1" class="seat" onclick="handleSeatSelection('D1')">D1</button>
@@ -235,6 +241,7 @@
                             <button id="D4" class="seat" onclick="handleSeatSelection('D4')">D4</button>
                         </div>
                     </div>
+
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
                             <button id="E1" class="seat" onclick="handleSeatSelection('E1')">E1</button>
@@ -245,6 +252,7 @@
                             <button id="E4" class="seat" onclick="handleSeatSelection('E4')">E4</button>
                         </div>
                     </div>
+
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
                             <button id="F1" class="seat" onclick="handleSeatSelection('F1')">F1</button>
@@ -255,6 +263,7 @@
                             <button id="F4" class="seat" onclick="handleSeatSelection('F4')">F4</button>
                         </div>
                     </div>
+
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
                             <button id="G1" class="seat" onclick="handleSeatSelection('G1')">G1</button>
@@ -265,6 +274,7 @@
                             <button id="G4" class="seat" onclick="handleSeatSelection('G4')">G4</button>
                         </div>
                     </div>
+
                     <div class="flex justify-between mt-5">
                         <div class="flex gap-8">
                             <button id="H1" class="seat" onclick="handleSeatSelection('H1')">H1</button>
@@ -277,7 +287,7 @@
                     </div>
                 </div>
 
-                <div class="seat-summary-container  w-[40%]">
+                <div class="seat-summary-container ">
                     <h1 class="text-2xl mb-2">Select Your Seat</h1>
                     <div class="min-h-[300px] bg-gray-100 p-5">
                         <div class="grid grid-cols-3 border-b-2">
@@ -316,12 +326,13 @@
                     <div class="pt-5">
                         <div>
                             <label for="">Passenger Name *</label>
-                            <input type="text" name="" id="name" class="w-full border-2 p-2" placeholder="Enter Your Name">
+                            <input type="text" name="" id="name" class="w-full border-2 p-2"
+                                placeholder="Enter Your Name">
                         </div>
                         <div class="my-3">
                             <label for="">Phone Number *</label>
-                            <input type="number" name="" id="phone" class="w-full border-2 p-2" placeholder="Enter Phone No."
-                            oninput="handlePhoneNumber()">
+                            <input type="number" name="" id="phone" class="w-full border-2 p-2"
+                                placeholder="Enter Phone No." oninput="handlePhoneNumber()">
                         </div>
                         <div>
                             <label for="">Email ID</label>
@@ -329,7 +340,8 @@
                         </div>
                     </div>
 
-                    <button type="submit" id="submit-button" disabled class=" btn w-full bg-[#1DD100] p-2 mt-4 text-white font-bold"
+                    <button type="submit" id="submit-button" disabled
+                        class=" btn w-full bg-[#1DD100] p-2 mt-4 text-white font-bold"
                         onclick="my_modal_2.showModal()">Next</button>
 
                 </div>
