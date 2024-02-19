@@ -281,7 +281,7 @@
                     <h1 class="text-2xl mb-2">Select Your Seat</h1>
                     <div class="min-h-[300px] bg-gray-100 p-5">
                         <div class="grid grid-cols-3 border-b-2">
-                            <h1>Seat <span id="numberOfSelectedSeat" class="bg-[#1DD100] text-white p-2"></span></h1>
+                            <h1>Seat <span id="numberOfSelectedSeat" class="bg-[#1DD100] text-white px-1">0</span></h1>
                             <h1>Class</h1>
                             <h1>Price</h1>
                         </div>
@@ -294,9 +294,17 @@
                             <h1>Total Price</h1>
                             <h1>BDT <span id="TotalPrice">0</span></h1>
                         </div>
+
+                        <div id="discount-container" class="flex justify-between py-3 border-b-2 hidden">
+                            <h1>Discount</h1>
+                            <h1>BDT <span id="totalDiscount">0</span></h1>
+                        </div>
+
                         <div id="coupon-container">
-                            <input id="coupon-input" disabled type="text" class="w-[70%] p-2 border-2" placeholder="Have any coupon?">
-                            <button id="apply-button" disabled class="bg-[#1DD100] p-2 text-white" onclick="getCoupon()">Apply</button>
+                            <input id="coupon-input" disabled type="text" class="w-[70%] p-2 border-2"
+                                placeholder="Have any coupon?">
+                            <button id="apply-button" disabled class="bg-[#1DD100] p-2 text-white"
+                                onclick="getCoupon()">Apply</button>
                         </div>
                         <div class="flex justify-between mt-3">
                             <h1>Grand Total</h1>
@@ -308,19 +316,21 @@
                     <div class="pt-5">
                         <div>
                             <label for="">Passenger Name *</label>
-                            <input type="text" name="" id="" class="w-full border-2 p-2" placeholder="Enter Your Name">
+                            <input type="text" name="" id="name" class="w-full border-2 p-2" placeholder="Enter Your Name">
                         </div>
                         <div class="my-3">
                             <label for="">Phone Number *</label>
-                            <input type="text" name="" id="" class="w-full border-2 p-2" placeholder="Enter Phone No.">
+                            <input type="text" name="" id="phone" class="w-full border-2 p-2" placeholder="Enter Phone No."
+                            oninput="handlePhoneNumber()">
                         </div>
                         <div>
                             <label for="">Email ID</label>
-                            <input type="text" name="" id="" class="w-full border-2 p-2" placeholder="Enter Email">
+                            <input type="text" name="" id="email" class="w-full border-2 p-2" placeholder="Enter Email">
                         </div>
                     </div>
 
-                    <button type="submit" class="w-full bg-[#1DD100] p-2 mt-4 text-white font-bold">Next</button>
+                    <button type="submit" id="submit-button" disabled class=" btn w-full bg-[#1DD100] p-2 mt-4 text-white font-bold"
+                        onclick="my_modal_2.showModal()">Next</button>
 
                 </div>
             </div>
@@ -361,6 +371,20 @@
             </div>
         </nav>
     </footer>
+
+    <!-- ----------------- Modal ----------------------- -->
+    <dialog id="my_modal_2" class="modal">
+        <div class="modal-box">
+            <img src="./images/success.png" alt="">
+            <h3 class="font-bold text-lg">Success</h3>
+            <p class="">Thank you for Booking Our Bus Seats. </p>
+            <p>We are working hard to find the best service and deals for you. </p>
+            <p>Shortly you will find a confirmation in your email.</p>
+        </div>
+        <form method="dialog" class="modal-backdrop">
+            <button>close</button>
+        </form>
+    </dialog>
 
     <script src="./functionality.js"></script>
 </body>

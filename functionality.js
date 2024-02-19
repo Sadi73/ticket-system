@@ -3,10 +3,11 @@ const selectedSeat = [];
 function handleSeatSelection(seatId) {
     if (!selectedSeat.includes(seatId)) {
         document.getElementById(seatId).classList.add('selected-seat');
+
         selectedSeat.push(seatId);
+        handlePhoneNumber();
 
         document.getElementById('numberOfSeatsLeft').innerText = 40 - selectedSeat.length;
-
         document.getElementById('numberOfSelectedSeat').innerText = selectedSeat.length;
         document.getElementById('TotalPrice').innerText = selectedSeat.length * 550;
         document.getElementById('grandTotal').innerText = document.getElementById('TotalPrice').innerText;
@@ -44,10 +45,29 @@ function getCoupon() {
     if (givenInput === 'NEW15') {
         currentGrandTotal = currentGrandTotal - currentGrandTotal * 0.15;
         document.getElementById('coupon-container').style.display = 'none';
+        document.getElementById('totalDiscount').innerText = 330;
+        document.getElementById('discount-container').classList.remove('hidden');
     } else if (givenInput === 'Couple 20') {
         currentGrandTotal = currentGrandTotal - currentGrandTotal * 0.2;
         document.getElementById('coupon-container').style.display = 'none';
+        document.getElementById('totalDiscount').innerText = 440;
+        document.getElementById('discount-container').classList.remove('hidden');
     };
 
     document.getElementById('grandTotal').innerText = currentGrandTotal;
 }
+
+function handlePhoneNumber() {
+
+    var phoneInput = document.getElementById("phone");
+    var phoneNumber = phoneInput.value;
+
+    if (selectedSeat.length > 0 && phoneNumber !== '') {
+        document.getElementById('submit-button').removeAttribute('disabled');
+    } else {
+        document.getElementById('submit-button').setAttribute('disabled', true);
+    }
+}
+
+
+
